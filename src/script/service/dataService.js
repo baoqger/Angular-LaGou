@@ -5,10 +5,10 @@
 angular.module('app').service('dataService',['$http','cache',function($http,cache){
 
     this.getPositionList = function(){
-        return $http.get('/data/positionList.json');
+        return $http.get('data/positionList.json');
     };
 	this.getPositionListNew = function(){
-		return $http.get('/data/positionList.json').then(function(resp){
+		return $http.get('data/positionList.json').then(function(resp){
 			return resp.data
 		});
 	};

@@ -1,6 +1,6 @@
 [{
     "id": "c1",
-    "imageUrl": "/image/company-1.png",
+    "imageUrl": "image/company-1.png",
     "name": "谷歌",
     "industry": "移动互联网",
     "state": "A轮",
@@ -27,7 +27,7 @@
 },
   {
     "id": "c2",
-    "imageUrl": "/image/company-2.png",
+    "imageUrl": "image/company-2.png",
     "name": "脸书",
     "industry": "互联网",
     "state": "C轮",
@@ -45,7 +45,7 @@
   },
   {
     "id": "c3",
-    "imageUrl": "/image/company-3.png",
+    "imageUrl": "image/company-3.png",
     "name": "苹果",
     "industry": "互联网",
     "state": "上市",
