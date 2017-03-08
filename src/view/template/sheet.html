@@ -1,0 +1,8 @@
+<div class="sheet" ng-show="sheet.visible" ng-click="sheet.closeFilterList()">
+	<div class="wrap">
+		<ul>
+			<li class="d-b ta-c" ng-click="sheet.getFilterObj(eachitem.id,sheet.tabId)" ng-repeat="eachitem in sheet.filterList" ng-bind="eachitem.name"></li>
+		</ul>
+		<button ng-click="sheet.closeFilterList()">取消</button>
+	</div>
+</div>

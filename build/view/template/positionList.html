@@ -1,0 +1,19 @@
+<ul class="position-list bg-w">
+<!--    <li class="item">
+        <img class="logo f-l" src="image/company-3.png" alt="">
+        <h3 class="title">销售</h3>
+        <p class="text">
+            千度[上海]互联网<br>
+            2016-06-01 11:05
+        </p>
+    </li>-->
+    <li class="item" ui-sref="position({id:item.id})" ng-repeat="item in posiList.data | filter : posiList.filterObj">
+        <img class="logo f-l" ng-src="{{item.imageUrl}}" alt="">
+        <h3 class="title d-ib" ng-bind="item.job"></h3>
+        <p class="text d-ib c-r" ng-bind="item.salaryName"></p>
+        <p class="text" ng-bind="item.companyName + '['+ item.cityName + ']' + item.industryName + ' '+ item.scaleName"></p>
+        
+        <p class="text" ng-bind="item.date"></p>
+        <div class="clear"></div>
+    </li>
+</ul>

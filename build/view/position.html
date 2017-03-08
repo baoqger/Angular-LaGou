@@ -1,0 +1,11 @@
+<div app-head-bar text="'职位详情'"></div>
+<div app-position-info pos="position.position"></div>
+<div app-company comp="position.company"></div>
+<div class="bg-w position-desc">
+    <h5>职位描述</h5>
+    <pre class="ta-l" ng-bind="position.position.description">岗位职责：1.销售产品
+    </pre>
+    <button class="bottom-btn c-w" ng-show="position.loginStatus && !position.submitStatus" ng-click="position.submitResume()" ng-bind="'投个简历'"></button>
+    <button class="bottom-btn c-w" ng-show="position.loginStatus && position.submitStatus"  ng-bind="'已投递'"></button>
+    <button class="bottom-btn c-w" ui-sref="login" ng-show="!position.loginStatus" ng-bind="'去登录'"></button>
+</div>

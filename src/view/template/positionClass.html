@@ -1,0 +1,11 @@
+<div class="position-class">
+    <h5>职位分类</h5>
+	<button ng-class="{'active':posiClass.currentPositionClass === eachclass}" ng-repeat="eachclass in posiClass.positionClass" ng-bind="eachclass" ng-click="posiClass.getCurrentPosi(eachclass)"></button>
+    <ul>
+        <li class="p-r" ng-repeat="eachposi in posiClass.currentpositionlist">
+            <p ng-bind="eachposi.name"></p>
+            <p ng-bind="eachposi.createdDate"></p>
+            <span ng-bind="eachposi.salary" class="p-a"></span>
+        </li>
+    </ul>
+</div>

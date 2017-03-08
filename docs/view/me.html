@@ -1,0 +1,16 @@
+<div class="me ta-c">
+    <div ng-show="me.loginStatus">
+        <img class="d-b" src="image/head.png" alt=""></img>
+        <span class="name">Chris</span>
+        <div class="btns">
+            <button ui-sref="post">投递</button>
+            <button ui-sref="favorite">收藏</button>
+            <button class="logout" ng-click="me.logout()">推出登录</button>        
+        </div>        
+    </div>
+    <div ng-show="!me.loginStatus">
+        <button class="login-btn" ui-sref="login">去登录</button>
+    </div>
+
+</div>
+<div app-foot></div>

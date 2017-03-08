@@ -1,0 +1,74 @@
+[{
+    "id": "c1",
+    "imageUrl": "/image/company-1.png",
+    "name": "谷歌",
+    "industry": "移动互联网",
+    "state": "A轮",
+    "people": "50-150人",
+    "positionClass": [{
+      "id": "jishu",
+      "name": "技术",
+      "positionList": [{
+        "id": "p1",
+        "name": "Web前端工程师",
+        "createdDate": "2016-04-16 23:30",
+        "salary": "15k-25k"
+      }]
+    }, {
+      "id": "yunying",
+      "name": "运营",
+      "positionList": [{
+        "id": "y1",
+        "name": "运营总监",
+        "createdDate": "2016-04-10 13:30",
+        "salary": "25k以上"
+      }]
+    }]
+},
+  {
+    "id": "c2",
+    "imageUrl": "/image/company-2.png",
+    "name": "脸书",
+    "industry": "互联网",
+    "state": "C轮",
+    "people": "500人以上",
+    "positionClass": [{
+      "id": "jishu",
+      "name": "技术",
+      "positionList": [{
+        "id": "p2",
+        "name": "SEM工程师",
+        "createdDate": "2016-06-01 01:05",
+        "salary": "5k~8k"
+      }]
+    }]
+  },
+  {
+    "id": "c3",
+    "imageUrl": "/image/company-3.png",
+    "name": "苹果",
+    "industry": "互联网",
+    "state": "上市",
+    "people": "500人以上",
+    "positionClass": [{
+      "id": "xiaoshou",
+      "name": "销售",
+      "positionList": [{
+        "id": "p3",
+        "name": "销售",
+        "createdDate": "2016-06-01 01:05",
+        "salary": "3k-5k"
+      }]
+    },
+      {
+        "id": "chanpin",
+        "name": "产品",
+        "positionList": [{
+          "id": "p4",
+          "name": "产品经理",
+          "createdDate": "2016-04-10 13:30",
+          "salary": "15k-25k"
+        }]
+      }]
+  }
+]

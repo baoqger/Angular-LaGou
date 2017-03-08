@@ -1,0 +1,7 @@
+<div class="bg-w position-info p-r">
+    <p><span ng-bind="posiInfo.pos.job"></span><span ng-bind="posiInfo.pos.salaryName" class="ml c-r"></span></p>
+    <p><span ng-bind="posiInfo.pos.cityName"></span><span ng-bind="posiInfo.pos.experience" class="ml"></span><span ng-bind="posiInfo.pos.education" class="ml"></span></p>
+    <p ng-bind="posiInfo.pos.benefit"></p>
+    <img ng-show="posiInfo.loginStatus && posiInfo.favoriteStatus" class="p-a" src="image/star-active.png" ng-click="posiInfo.removeFavorite(posiInfo.pos.id)" alt="">
+    <img ng-show="posiInfo.loginStatus && !posiInfo.favoriteStatus" class="p-a" src="image/star.png" ng-click="posiInfo.addFavorite(posiInfo.pos.id)" alt="">
+</div>

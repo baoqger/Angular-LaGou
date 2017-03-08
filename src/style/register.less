@@ -1,0 +1,123 @@
+.register {
+    background-image: url(../image/background.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    left:0;
+    right: 0;
+    top:0;
+    bottom:0;
+    form {
+        .mt(55);
+        
+        .form-line {
+            margin-left: auto;
+            margin-right: auto;
+            box-sizing: content-box;
+            .w(300);
+            .h(40);
+            .lh(40);
+            background-color:@formBgColor;
+            
+            font-size: 0;
+            
+            &:first-child {
+                border-bottom: 1px solid @defaultColor;
+            }
+            
+            span {
+                background-repeat: no-repeat;
+                background-color: @iconBgColor;
+                background-position: 15px 8px;
+                height: 100%;
+                .w(55);                
+            }
+            .account {
+                background-image: url(../image/account.png);
+            }
+            .lock {
+                background-image: url(../image/lock.png);
+            }
+            
+            input {
+                box-sizing: border-box;
+                border-width: 0;
+                background-color:@formBgColor;
+                outline-width: 0;
+                height: 100%;
+                color: @defaultColor;
+                .w(245);
+                font-size: 14px;
+                .pl(30);
+                
+                &::-webkit-input-placeholder {
+                    color:@defaultColor;
+                } 
+                &.ng-invalid {
+                    & + span {
+                        color:red;
+                        right: 0; 
+                        background-color: transparent;
+                        position: absolute;
+                        height: 100%;
+                        font-size: 12px;
+                        width: 100%;
+                        text-align: right;
+                        p {
+                            margin: 0;
+                        }
+                    }
+                    
+
+                    
+                }
+            }
+        }
+        
+        .message-wrap {
+            .mt(40);
+            .w(300);
+            margin-left: auto;
+            margin-right: auto;
+            .message-box {
+                box-sizing: border-box;
+                border-width: 0;
+                background-color:@formBgColor;
+                outline-width: 0;
+                height: 100%;
+                .w(190);
+                .h(40);
+                font-size: 14px;
+                .pl(30);
+                &::-webkit-input-placeholder {
+                    color:@defaultColor;
+                }             
+            }
+            .message {
+                .fs(14);
+                color: @headBgColor;
+                border: 1px solid @headBgColor;
+                padding: 0 5px;
+            }
+            
+        }
+
+        button {
+             .w(300);
+            .h(40);
+            font-weight: bold;
+            font-size: 22px;
+            &.login-btn {
+                margin-top: 60px;
+                background-color:@headBgColor;
+                color: @defaultColor;
+            }
+            &.register-btn {
+                margin-top: 20px;
+                background-color: @btnBgColor;
+                color: @headBgColor;
+            }
+        }
+    }
+    
+}
